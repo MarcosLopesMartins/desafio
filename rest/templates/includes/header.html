@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default">
+
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{% url 'home' %}">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-menu">
+      <ul class="nav navbar-nav">
+
+        <li{% if '/carga/' in request.path %} class="active" onclick="return confirm('Por favor!!! Confirme esta função...');"{% endif %}>
+          <a href="{% url 'carga' %}" title='Realizar a carga do dataset'>Dataset</a>
+        </li>
+
+        <li{% if '/search/' in request.path %} class="active"{% endif %}>
+          <a href="{% url 'search' %}" title='Visualizar todos os nomes dos Pacientes'>Todos</a>
+        </li>
+
+        <li{% if '/invalidos/' in request.path %} class="active"{% endif %}>
+          <a href="{% url 'invalidos' %}" title='Visualizar os nomes inválidos dos Pacientes'>Check</a>
+        </li>
+
+        <li><a href="https://iclinic.com.br/" target='blank' title='Visite nosso Site na WEB'>iClinic Software Médico</a></li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>

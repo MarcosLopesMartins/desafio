@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <img src="https://production-app.s3.amazonaws.com/static/v2/img/svg/full-logo-blue.svg"/>
+  <h1 class="page-header">iClinic Challenge</h1>
+
+  <p class="lead">Click aqui <a href="{% url 'carga' %}"onclick="return confirm('Por favor!!! Confirme esta função...');">Carga</a> para Atualizar o Dataset dos Pacientes.</p>
+
+  <p class="lead">Click aqui <a href="{% url 'search' %}">Pesquisa</a> para Visualizar todos os Pacientes.</p>
+
+  <p class="lead">Click aqui <a href="{% url 'invalidos' %}">Verificar</a> para Visualizar Nomes Inválidos.</p>
+
+{% endblock %}
+
