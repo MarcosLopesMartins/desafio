@@ -12,8 +12,8 @@ def carga_dataset(mensagem):
         e apontar nomes inválidos"""
 #-----------------------------------
 
-    mensagem = u'Apenas testando...'
-    return mensagem
+    #mensagem = u'Apenas testando...'
+    #return mensagem
 
     import csv
     import string
