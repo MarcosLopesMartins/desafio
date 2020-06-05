@@ -7,7 +7,7 @@ certifi==2018.4.16
 chardet==2.3.0
 chrome-gnome-shell==0.0.0
 defer==1.0.6
-Django==2.1
+Django==2.2.13
 django-filter==2.0.0
 django-oauth-toolkit==1.2.0
 django-widget-tweaks==1.4.2
